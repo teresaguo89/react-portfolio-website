@@ -80,7 +80,7 @@
     transition: 0.2s ease-in;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
     .home {
       justify-content: center;
       align-items: center;
@@ -101,12 +101,12 @@
   
     .headerContainer h1 {
       font-size: 40px;
-      height: 30px;
+      height: auto;
       color: black;
     }
     .headerContainer h2 {
       font-size: 30px;
-      height: 30px;
+      height: auto;
       color: black;
     }
   
@@ -123,4 +123,26 @@
       background-color: rgb(225, 225, 225);
       color: white;
     }
+}
+
+@media only screen and (max-width: 480px) {
+  .headerContainer h1 {
+      font-size: 28px;  
+      height: auto;
+      color: black;
+      margin: 8px 0;
+  }
+
+  .headerContainer h2 {
+      font-size: 20px;  
+      height: auto;
+      color: black;
+      margin: 8px 0;
+  }
+
+  .headerContainer button {
+      height: 45px;
+      width: 180px;  
+      font-size: 14px;
+  }
 }

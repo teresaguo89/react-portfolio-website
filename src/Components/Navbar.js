@@ -27,6 +27,20 @@ function Navbar() {
     }
   }, [location]);
 
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 700) {
+        setOpenLinks(false);
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+  
   return (
     <div className = "navbar">
       <div className = "leftSide" id={openLinks ? "open" : "close"}>

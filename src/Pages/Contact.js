@@ -36,7 +36,7 @@ function Contact() {
      <div className='contact'>
         <div className='leftSide'>
             <div className='iconContainer'>
-                <Diversity3Icon style={{ fontSize: '25rem', color: 'white', marginTop: 150}} />
+            <Diversity3Icon style={{ color: 'white', marginTop: 150}} />
             </div>
         </div>
 

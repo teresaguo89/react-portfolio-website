@@ -1,10 +1,10 @@
+import React from 'react';
 import './App.css';
 import Navbar from './Components/Navbar';
-
 import Home from "./Pages/Home";
 import About from "./Pages/About";
 import Contact from "./Pages/Contact";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
@@ -12,11 +12,10 @@ function App() {
       <Router>
         <Navbar />
         <Routes>  
-          <Route path="/" exact element={<Home/>}/>
-          <Route path="/about" exact element={<About/>}/>
-          <Route path="/contact" exact element={<Contact/>}/>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
-
       </Router>
     </div>
   );

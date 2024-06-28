@@ -11,7 +11,7 @@
     overflow-y: auto;
     flex: 1;
     background-size: contain;
-    margin: auto; 
+    margin: auto;
 }
 
 @keyframes fade-down {
